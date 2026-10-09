@@ -1,0 +1,106 @@
+/* Page entrance */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Navbar */
+
+.sidebar {
+    animation: fadeIn 0.7s ease both;
+}
+
+/* Home content */
+
+#cont__sec01__name {
+    animation: slideRight 0.8s ease both;
+}
+
+#cont__sec01__photo {
+    animation: slideUp 0.9s ease both;
+}
+
+#my__photo {
+    animation: floating 4s ease-in-out infinite;
+}
+
+/* Sections */
+
+#skills,
+#projects,
+#contact {
+    animation: slideUp 0.8s ease both;
+}
+
+/* Project cards */
+
+.sec01__cards {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sec01__cards:hover {
+    transform: translateY(-6px);
+}
+
+/* Buttons */
+
+#contactBtn,
+#sec02__form button {
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

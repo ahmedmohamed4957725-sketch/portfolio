@@ -3,10 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Ahmed Mohamed | Portfolio</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a simple portfolio website.</p>
+
+    <div class="container">
+
+        <!-- Navbar -->
+        <div class="sidebar">
+            <nav>
+                <h2>Portfolio</h2>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="cont__sec">
+
+            <article id="cont__sec01__name" class="cont__sec01__art">
+                <h1 id="name">Ahmed Mohamed</h1>
+
+                <p id="role">Front-End Developer</p>
+
+                <p id="info">
+                    I am a passionate front-end developer with a strong
+                    focus on creating engaging and user-friendly web
+                    experiences. I have experience in building responsive
+                    websites and web applications using modern technologies.
+                </p>
+
+                <a href="#contact" id="contactBtn">
+                    Let's Get Started
+                </a>
+            </article>
+
+            <article id="cont__sec01__photo" class="cont__sec01__art">
+                <img id="my__photo" src="./images/profile.jpeg" alt="Ahmed Mohamed profile photo">
+            </article>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="cont__sec">
+
+            <article id="sec03__title">
+                <h2>My Skills</h2>
+            </article>
+
+            <article id="sec03__skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>PostgreSQL</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="cont__sec">
+
+            <article id="sec01__title">
+                <h2>My Projects</h2>
+            </article>
+
+            <article id="sec01__card01" class="sec01__cards">
+                <img src="./images/smartfarm.webp" alt="Smart Farm project">
+
+                <h3>Smart Farm / AI Farm Management</h3>
+
+                <p>
+                    A multi-platform system connecting web, mobile, AI,
+                    and IoT sensors to support data-driven plant care
+                    and agricultural analysis.
+                </p>
+            </article>
+
+            <article id="sec01__card02" class="sec01__cards">
+                <img src="./images/movie.jfif" alt="Movie Management API">
+
+                <h3>Movie Management API</h3>
+
+                <p>
+                    A movie catalog API with CRUD endpoints, pagination,
+                    JWT authentication, and bcrypt password hashing.
+                </p>
+            </article>
+
+            <article id="sec01__card03" class="sec01__cards">
+                <img src="./images/e-commerc.jfif" alt="E-Commerce Platform">
+
+                <h3>E-Commerce Platform</h3>
+
+                <p>
+                    A responsive shopping experience with product
+                    management, cart, checkout, PayPal integration,
+                    and OAuth login.
+                </p>
+            </article>
+
+            <article id="sec01__card04" class="sec01__cards">
+                <img src="./images/college.jfif" alt="College Management System">
+
+                <h3>College Management System</h3>
+
+                <p>
+                    A desktop system for student registration, course
+                    enrollment, grading, and relational data management.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="cont__sec">
+
+            <article id="sec02__title">
+                <h2>Contact Me</h2>
+            </article>
+
+            <article id="sec02__form">
+
+                <form mailto="mailto:ahmedmsaied86@gmail.com">
+
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,280 @@
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+    background: #111827;
+    color: white;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: #d1d5db;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #38bdf8;
+    color: #111827;
+}
+
+/* Sections */
+.cont__sec {
+    margin-left: 240px;
+    padding: 70px 5%;
+    scroll-margin-top: 20px;
+}
+
+/* Home */
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(135deg, #eff6ff, white);
+}
+
+.cont__sec01__art {
+    flex: 1;
+    min-width: 0;
+}
+
+#name {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#role {
+    font-size: 24px;
+    color: #0284c7;
+    font-weight: bold;
+}
+
+#info {
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #555;
+}
+
+#contactBtn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contactBtn:hover {
+    background: #0369a1;
+    transform: translateY(-3px);
+}
+
+#my__photo {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 20px #00000015;
+}
+
+/* Skills */
+#skills {
+    background: #f1f5f9;
+    min-height: 350px;
+}
+
+#sec03__title,
+#sec02__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sec03__title h2,
+#sec01__title h2,
+#sec02__title h2 {
+    font-size: 32px;
+    color: #111827;
+}
+
+#sec03__skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+#sec03__skills li {
+    padding: 12px 24px;
+    border-radius: 25px;
+    background: #e0f2fe;
+    color: #075985;
+    font-weight: bold;
+    border: 1px solid #bae6fd;
+    transition: 0.3s;
+}
+
+#sec03__skills li:hover {
+    background: #0284c7;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    background: white;
+}
+
+#sec01__title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sec01__cards {
+    min-width: 0;
+    overflow: hidden;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000012;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 10px;
+}
+
+.sec01__cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #00000020;
+}
+
+.sec01__cards img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sec01__cards h3 {
+    margin: 15px;
+    color: #0284c7;
+    font-size: 20px;
+}
+
+.sec01__cards p {
+    margin: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Contact */
+#contact {
+    background: #f1f5f9;
+}
+
+#sec02__form {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #00000010;
+}
+
+#sec02__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sec02__form label {
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+#sec02__form input,
+#sec02__form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font: inherit;
+    outline: none;
+}
+
+#sec02__form input:focus,
+#sec02__form textarea:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px #0284c720;
+}
+
+#sec02__form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#sec02__form button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #0284c7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sec02__form button:hover {
+    background: #0369a1;
+}
