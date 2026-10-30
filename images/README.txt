@@ -1,0 +1,1 @@
+Put your profile photo here and name it my-photo.jpg.

@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Laptop / desktop — 1024px and above
+   ========================================================================== */
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --gutter: 40px;
+  }
+
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.84fr);
+  }
+}
+
+/* Small laptops: 1024px – 1279px */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  :root {
+    --gutter: 28px;
+  }
+
+  .hero {
+    gap: 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(46px, 6vw, 74px);
+  }
+
+  .hero-visual {
+    min-height: 350px;
+  }
+
+  .about-section {
+    gap: 56px;
+  }
+
+  .education-section {
+    gap: 44px;
+  }
+
+  .skills-grid {
+    gap: 12px;
+  }
+
+  .skill-card {
+    min-height: 285px;
+    padding: 20px;
+  }
+
+  .contact-inner {
+    gap: 50px;
+  }
+}
+
+/* Large desktops: 1440px and above */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --max: 1240px;
+  }
+
+  .hero {
+    min-height: 680px;
+  }
+}

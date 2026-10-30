@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Mohamed Saied — Full-Stack and Backend Developer portfolio.">
+    <title>Ahmed Mohamed Saied | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smallScreen.css">
+    <link rel="stylesheet" href="css/mediumScreen.css">
+    <link rel="stylesheet" href="css/largeScreen.css">
+    <meta name="theme-color" content="#f7f7f3">
+    <script>
+        // Applied before first paint: keeps the chosen theme and avoids a flash.
+        (function () {
+            var el = document.documentElement;
+            el.classList.add('js-reveal');
+            var theme = null;
+            try { theme = localStorage.getItem('ams-theme'); } catch (e) { }
+            if (!theme) {
+                theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+                    ? 'dark'
+                    : 'light';
+            }
+            el.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body id="container">
+    <div id="cont__sec01" class="cont__sec">
+        <header class="site-header" id="header">
+            <a class="logo" href="#home" aria-label="Ahmed home"><span class="logo-mark">A</span><span>ahmed<span
+                        class="accent">.</span></span></a>
+            <nav class="main-nav" id="nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact" class="nav-extra">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" role="switch" aria-checked="false"
+                    aria-label="Switch to dark theme">
+                    <span class="theme-toggle__knob">
+                        <svg class="tt-icon tt-sun" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4.4" fill="currentColor" />
+                            <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                                <path d="M12 2.4v2.4" />
+                                <path d="M12 19.2v2.4" />
+                                <path d="M2.4 12h2.4" />
+                                <path d="M19.2 12h2.4" />
+                                <path d="M5.2 5.2l1.7 1.7" />
+                                <path d="M17.1 17.1l1.7 1.7" />
+                                <path d="M18.8 5.2l-1.7 1.7" />
+                                <path d="M6.9 17.1l-1.7 1.7" />
+                            </g>
+                        </svg>
+                        <svg class="tt-icon tt-moon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.3 14.8A8.6 8.6 0 019.2 3.7a8.7 8.7 0 1011.1 11.1z" fill="currentColor" />
+                        </svg>
+                    </span>
+                </button>
+                <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <div class="hero section-wrap cont__sec01__info" id="home">
+            <div class="hero-copy" id="name">
+                <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT · SUEZ, EGYPT</p>
+                <h1>Building useful<br>things with <span class="accent">code.</span></h1>
+                <p class="hero-description" id="info">I'm Ahmed Mohamed Saied, a Full-Stack Developer focused on backend
+                    engineering,
+                    RESTful APIs, and reliable database-driven applications.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+                    <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+                </div>
+                <div class="hero-meta">
+                    <div><span class="meta-number">04+</span><span class="meta-label">Featured projects</span></div>
+                    <div><span class="meta-number">2027</span><span class="meta-label">Expected graduation</span></div>
+                    <div><span class="meta-number">Full-stack</span><span class="meta-label">Development focus</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual cont__sec01__photo" aria-label="Developer introduction graphic">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="code-window">
+                    <div class="window-top"><span></span><span></span><span></span>
+                        <p>ahmed.js</p>
+                    </div>
+                    <div class="code-content">
+                        <p><span class="code-muted">01</span> <span class="code-purple">const</span> developer = {</p>
+                        <p><span class="code-muted">02</span> &nbsp; name: <span class="code-green">'Ahmed'</span>,</p>
+                        <p><span class="code-muted">03</span> &nbsp; role: <span class="code-green">'Full-Stack'</span>,
+                        </p>
+                        <p><span class="code-muted">04</span> &nbsp; focus: [</p>
+                        <p><span class="code-muted">05</span> &nbsp;&nbsp; <span class="code-green">'Backend
+                                APIs'</span>,</p>
+                        <p><span class="code-muted">06</span> &nbsp;&nbsp; <span class="code-green">'PostgreSQL'</span>,
+                        </p>
+                        <p><span class="code-muted">07</span> &nbsp;&nbsp; <span class="code-green">'Problem
+                                solving'</span></p>
+                        <p><span class="code-muted">08</span> &nbsp; ]</p>
+                        <p><span class="code-muted">09</span> };</p>
+                        <p class="code-comment">// Always learning, always building.</p>
+                    </div>
+                </div>
+                <div class="floating-chip chip-top"><span class="chip-icon">⌘</span> Clean code</div>
+                <div class="floating-chip chip-bottom"><span class="chip-pulse"></span> Open to opportunities</div>
+                <div class="hero-spark">✳</div>
+            </div>
+        </div>
+
+        <section class="tech-strip section-wrap" id="tools" aria-label="Technology stack">
+            <span class="strip-label">TOOLS I WORK WITH</span>
+            <div class="tech-list">
+                <span>JavaScript</span><i></i><span>Node.js</span><i></i><span>Express</span><i></i><span>React</span><i></i><span>PostgreSQL</span><i></i><span>Git</span>
+            </div>
+        </section>
+    </div>
+
+    <main>
+        <div id="cont__sec02" class="cont__sec">
+            <section class="section section-wrap about-section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / ABOUT ME</p>
+                    <h2>Curious by nature.<br><span class="muted-heading">Developer by choice.</span></h2>
+                </div>
+                <div class="about-content">
+                    <p class="large-copy">I enjoy turning ideas into practical software — from thoughtful database
+                        design to APIs
+                        and user-friendly web experiences.</p>
+                    <p>I'm a Computer Science student at Modern Academy, building hands-on experience with JavaScript,
+                        Node.js,
+                        Express.js, React, and PostgreSQL. I care about readable code, secure authentication, and
+                        systems that are
+                        easy to maintain and grow.</p>
+                    <p>Currently, I'm contributing to a Smart Farm / AI Farm Management System that connects web,
+                        mobile, AI, and
+                        IoT technologies to support smarter agriculture.</p>
+                    <a class="text-link" href="#contact">More about working together <span>↗</span></a>
+                </div>
+            </section>
+
+            <section class="section section-wrap" id="skills">
+                <div class="section-heading heading-row">
+                    <div>
+                        <p class="eyebrow">02 / TOOLKIT</p>
+                        <h2>Skills & technologies</h2>
+                    </div>
+                    <p class="heading-note">The tools I use to plan, build, and ship software.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card" id="sec01__card01">
+                        <div class="skill-number">01</div>
+                        <div class="skill-icon">⌘</div>
+                        <h3>Backend development</h3>
+                        <p>Building REST APIs, application logic, and server-side systems.</p>
+                        <div class="tag-list"><span>Node.js</span><span>Express.js</span><span>REST
+                                APIs</span><span>JWT</span></div>
+                    </article>
+                    <article class="skill-card" id="sec01__card02">
+                        <div class="skill-number">02</div>
+                        <div class="skill-icon">◫</div>
+                        <h3>Frontend development</h3>
+                        <p>Creating responsive, accessible interfaces and connecting them to APIs.</p>
+                        <div class="tag-list">
+                            <span>React.js</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+                        </div>
+                    </article>
+                    <article class="skill-card" id="sec01__card03">
+                        <div class="skill-number">03</div>
+                        <div class="skill-icon">▤</div>
+                        <h3>Databases & security</h3>
+                        <p>Designing relational data models and implementing secure authentication.</p>
+                        <div class="tag-list"><span>PostgreSQL</span><span>SQL</span><span>OAuth
+                                2.0</span><span>Password
+                                hashing</span></div>
+                    </article>
+                    <article class="skill-card" id="sec01__card04">
+                        <div class="skill-number">04</div>
+                        <div class="skill-icon">↗</div>
+                        <h3>Tools & deployment</h3>
+                        <p>Version control, API testing, and deploying applications to the cloud.</p>
+                        <div class="tag-list"><span>Git /
+                                GitHub</span><span>Postman</span><span>Render</span><span>Railway</span><span>Neon</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="other-skills"><span>ALSO FAMILIAR WITH</span>
+                    <p>Java <b>·</b> C++ <b>·</b> SQL <b>·</b> Google Authentication <b>·</b> Database Design</p>
+                </div>
+            </section>
+
+            <section class="section projects-section" id="projects">
+                <div class="section-wrap">
+                    <div class="section-heading heading-row">
+                        <div>
+                            <p class="eyebrow">03 / SELECTED WORK</p>
+                            <h2>Projects with purpose<span class="accent">.</span></h2>
+                        </div>
+                        <p class="heading-note">A selection of academic and practical projects I've worked on.</p>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card project-featured">
+                            <div class="project-art farm-art">
+                                <div class="art-label">IN PROGRESS</div>
+                                <div class="farm-sun"></div>
+                                <div class="farm-hill hill-one"></div>
+                                <div class="farm-hill hill-two"></div>
+                                <div class="farm-sensor">◉ <span>soil / light / data</span></div>
+                                <div class="farm-caption">SMART FARM <span>↗</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline"><span>01 / SMART AGRICULTURE</span><span
+                                        class="project-state"><i></i> In
+                                        progress</span></div>
+                                <h3>Smart Farm / AI Farm Management</h3>
+                                <p>A multi-platform system connecting web, mobile, AI, and IoT sensors to support
+                                    data-driven plant care
+                                    and agricultural analysis.</p>
+                                <div class="tag-list">
+                                    <span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>IoT</span><span>AI
+                                        integration</span>
+                                </div>
+                                <p class="project-detail">My focus: backend APIs, authentication, database design, and
+                                    sensor data
+                                    ingestion.</p>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art movie-art">
+                                <div class="movie-poster poster-one">M<span>01</span></div>
+                                <div class="movie-poster poster-two">PLAY<span>02</span></div>
+                                <div class="movie-poster poster-three">FRAME<span>03</span></div>
+                                <div class="art-caption">MOVIE API <span>↗</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline"><span>02 / BACKEND API</span><span>RESTful service</span>
+                                </div>
+                                <h3>Movie Management API</h3>
+                                <p>A movie catalog API with CRUD endpoints, pagination, JWT authentication, and bcrypt
+                                    password hashing.
+                                </p>
+                                <div class="tag-list">
+                                    <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>JWT</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art shop-art">
+                                <div class="shop-window">
+                                    <div class="shop-nav"></div>
+                                    <div class="shop-banner"></div>
+                                    <div class="shop-items"><i></i><i></i><i></i></div>
+                                    <div class="shop-lines"></div>
+                                </div>
+                                <div class="art-caption">E-COMMERCE <span>↗</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline"><span>03 / FULL-STACK WEB</span><span>Web
+                                        application</span></div>
+                                <h3>E-Commerce Platform</h3>
+                                <p>A responsive shopping experience with product management, cart, checkout, PayPal
+                                    integration, and OAuth
+                                    login.</p>
+                                <div class="tag-list">
+                                    <span>React.js</span><span>Express</span><span>PostgreSQL</span><span>OAuth
+                                        2.0</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-art college-art">
+                                <div class="college-symbol">▦</div>
+                                <div class="college-record"><span>STUDENT RECORD</span><i></i><i></i><i></i><b>COURSE /
+                                        GRADES</b></div>
+                                <div class="art-caption">CAMPUS SYSTEM <span>↗</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-topline"><span>04 / DESKTOP APPLICATION</span><span>Academic
+                                        project</span></div>
+                                <h3>College Management System</h3>
+                                <p>A desktop system to organize student registration, course enrollment, grading, and
+                                    relational data.</p>
+                                <div class="tag-list"><span>Java</span><span>SQL</span><span>Database design</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="project-footnote">Project links can be added when public repositories or live demos are
+                        available.</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="cont__sec03" class="cont__sec">
+            <section class="section section-wrap education-section" id="education">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / LEARNING JOURNEY</p>
+                    <h2>Learning is part of the work.</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">EXPECTED 2027</div>
+                        <div>
+                            <h3>Bachelor of Computer Science</h3>
+                            <p class="timeline-place">Modern Academy · Cairo, Egypt</p>
+                            <p>Building a strong foundation in software development, programming, databases, and system
+                                design.</p>
+                        </div><span class="timeline-dot"></span>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">ONGOING</div>
+                        <div>
+                            <h3>Courses & professional learning</h3>
+                            <p class="timeline-place">Udemy · Elzero Web School · Cisco Networking Academy</p>
+                            <p>Full-Stack Web Development, JavaScript, REST APIs with Express, HTML & CSS, React, IT
+                                Essentials, and
+                                CCNA.</p>
+                        </div><span class="timeline-dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="section-wrap contact-inner">
+                    <div>
+                        <p class="eyebrow">05 / GET IN TOUCH</p>
+                        <h2>Have an idea?<br>Let's build <span class="accent">something.</span></h2>
+                        <p class="contact-copy">I'm interested in software development opportunities, collaborative
+                            projects, and
+                            learning from great teams.</p>
+                    </div>
+                    <div class="contact-card"><span class="contact-card-label">CONTACT DETAILS</span><a
+                            href="mailto:ahmedmsaied86@gmail.com">ahmedmsaied86@gmail.com <span>↗</span></a><a
+                            href="tel:+201008689405">+20 100 868 9405 <span>↗</span></a>
+                        <div class="contact-divider"></div><span class="contact-card-label">FIND ME ONLINE</span>
+                        <div class="social-links"><a href="https://www.linkedin.com/" target="_blank"
+                                rel="noreferrer">LinkedIn
+                                ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer section-wrap" id="footer"><a class="logo" href="#home"><span
+                class="logo-mark">A</span><span>ahmed<span class="accent">.</span></span></a>
+        <p>Designed & built with care by Ahmed Mohamed Saied.</p><a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
